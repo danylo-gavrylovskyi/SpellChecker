@@ -1,0 +1,15 @@
+C:\Users\danya\Spell_checker\Spell_checker\obj\Debug\net7.0\Spell_checker.csproj.AssemblyReference.cache
+C:\Users\danya\Spell_checker\Spell_checker\obj\Debug\net7.0\Spell_checker.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\danya\Spell_checker\Spell_checker\obj\Debug\net7.0\Spell_checker.AssemblyInfoInputs.cache
+C:\Users\danya\Spell_checker\Spell_checker\obj\Debug\net7.0\Spell_checker.AssemblyInfo.cs
+C:\Users\danya\Spell_checker\Spell_checker\obj\Debug\net7.0\Spell_checker.csproj.CoreCompileInputs.cache
+C:\Users\danya\Spell_checker\Spell_checker\bin\Debug\net7.0\Spell_checker.exe
+C:\Users\danya\Spell_checker\Spell_checker\bin\Debug\net7.0\Spell_checker.deps.json
+C:\Users\danya\Spell_checker\Spell_checker\bin\Debug\net7.0\Spell_checker.runtimeconfig.json
+C:\Users\danya\Spell_checker\Spell_checker\bin\Debug\net7.0\Spell_checker.dll
+C:\Users\danya\Spell_checker\Spell_checker\bin\Debug\net7.0\Spell_checker.pdb
+C:\Users\danya\Spell_checker\Spell_checker\obj\Debug\net7.0\Spell_checker.dll
+C:\Users\danya\Spell_checker\Spell_checker\obj\Debug\net7.0\refint\Spell_checker.dll
+C:\Users\danya\Spell_checker\Spell_checker\obj\Debug\net7.0\Spell_checker.pdb
+C:\Users\danya\Spell_checker\Spell_checker\obj\Debug\net7.0\Spell_checker.genruntimeconfig.cache
+C:\Users\danya\Spell_checker\Spell_checker\obj\Debug\net7.0\ref\Spell_checker.dll
