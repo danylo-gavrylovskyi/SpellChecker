@@ -7,7 +7,7 @@ string[] wordsList = File.ReadAllLines("C:\\Users\\danya\\Spell_checker\\Spell_c
 List<string> misspelledWords = new List<string>();
 for (int i = 0; i < words.Length; i++)
 {
-    if (!(wordsList.Contains(words[i])))
+    if (!(wordsList.Contains(words[i].ToLower())))
     {
         misspelledWords.Add(words[i]);
     }
