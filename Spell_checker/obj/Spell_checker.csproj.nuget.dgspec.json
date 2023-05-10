@@ -1,21 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\danya\\Huffman-code\\Spell_checker\\Spell_checker\\Spell_checker.csproj": {}
+    "C:\\Users\\Марина\\RiderProjects\\Term4_project1_git\\SpellChecker\\Spell_checker\\Spell_checker.csproj": {}
   },
   "projects": {
-    "C:\\Users\\danya\\Huffman-code\\Spell_checker\\Spell_checker\\Spell_checker.csproj": {
+    "C:\\Users\\Марина\\RiderProjects\\Term4_project1_git\\SpellChecker\\Spell_checker\\Spell_checker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\danya\\Huffman-code\\Spell_checker\\Spell_checker\\Spell_checker.csproj",
+        "projectUniqueName": "C:\\Users\\Марина\\RiderProjects\\Term4_project1_git\\SpellChecker\\Spell_checker\\Spell_checker.csproj",
         "projectName": "Spell_checker",
-        "projectPath": "C:\\Users\\danya\\Huffman-code\\Spell_checker\\Spell_checker\\Spell_checker.csproj",
-        "packagesPath": "C:\\Users\\danya\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\danya\\Huffman-code\\Spell_checker\\Spell_checker\\obj\\",
+        "projectPath": "C:\\Users\\Марина\\RiderProjects\\Term4_project1_git\\SpellChecker\\Spell_checker\\Spell_checker.csproj",
+        "packagesPath": "C:\\Users\\Марина\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Марина\\RiderProjects\\Term4_project1_git\\SpellChecker\\Spell_checker\\obj\\",
         "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Марина\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
@@ -47,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\Марина\\.dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

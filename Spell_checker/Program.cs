@@ -2,7 +2,7 @@
 string userLine = Console.ReadLine()!;
 string[] words = userLine.Split(new char[] { ' ', ',', '.', '!', '?', ':', '-' }, StringSplitOptions.RemoveEmptyEntries);
 
-string[] wordsList = File.ReadAllLines("C:\\Users\\danya\\Spell_checker\\Spell_checker\\words_list.txt");
+string[] wordsList = File.ReadAllLines("C:\\Users\\Марина\\Downloads\\words_list.txt");
 
 List<string> misspelledWords = new List<string>();
 for (int i = 0; i < words.Length; i++)
@@ -23,6 +23,15 @@ Console.WriteLine();
 int DamerauLevenshteinDistance(string userWord, string checkWord)
 {
     int[,] wordsMatrixx = new int[userWord.Length + 1, checkWord.Length + 1];
+    if (userWord.Length == 0)
+    {
+        return checkWord.Length;
+    }
+
+    if (checkWord.Length== 0)
+    {
+        return userWord.Length;
+    }
 
     for (int i = 0; i < userWord.Length; i++)
     {
@@ -48,8 +57,30 @@ int DamerauLevenshteinDistance(string userWord, string checkWord)
         {
             Console.Write(wordsMatrixx[i, j]);
         }
-        Console.WriteLine();
+        Console.WriteLine(userWord, checkWord );
+        
     }
+    
 
     return wordsMatrixx[userWord.Length, checkWord.Length];
 }
+
+
+foreach (string userWord in misspelledWords)
+{
+    Dictionary<string, int> wordDistance = new Dictionary<string, int>();
+    foreach (string checkWord in wordsList)
+    {
+        int distance = DamerauLevenshteinDistance(userWord, checkWord);
+        wordDistance.Add(checkWord, distance);
+    }
+    var ourWords = wordDistance.OrderBy(x => x.Value).Take(5);
+    
+    string correctedWords = "";
+    foreach (KeyValuePair<string, int> pair in ourWords)
+    {
+        correctedWords += pair.Key + "," + pair.Value + ";";
+    }
+    Console.WriteLine($"Maybe, you mean {correctedWords}");
+}
+
