@@ -37,19 +37,28 @@ int DamerauLevenshteinDistance(string userWord, string checkWord)
     {
         for (int j = 1; j < checkWord.Length; j++)
         {
-            int cost = userWord[i-1] == checkWord[j-1] ? 0 : 1;
+            int cost = userWord[i - 1] == checkWord[j - 1] ? 0 : 1;
             wordsMatrixx[i, j] = Math.Min(wordsMatrixx[i - 1, j - 1] + cost, Math.Min(wordsMatrixx[i - 1, j] + 1, wordsMatrixx[i, j - 1] + 1));
         }
     }
 
-    for (int i = 0; i < userWord.Length; i++)
-    {
-        for (int j = 0; j < checkWord.Length; j++)
-        {
-            Console.Write(wordsMatrixx[i, j]);
-        }
-        Console.WriteLine();
-    }
-
-    return wordsMatrixx[userWord.Length, checkWord.Length];
+    return wordsMatrixx[userWord.Length - 1, checkWord.Length - 1];
 }
+
+foreach (string userWord in misspelledWords)
+{
+    Dictionary<string, int> wordDistance = new Dictionary<string, int>();
+    foreach (string checkWord in wordsList)
+    {
+        int distance = DamerauLevenshteinDistance(userWord, checkWord);
+        wordDistance.Add(checkWord, distance);
+    }
+    var ourWords = wordDistance.OrderBy(x => x.Value).Take(5);
+
+    Console.WriteLine("Maybe, you mean :");
+    foreach (KeyValuePair<string, int> pair in ourWords)
+    {
+        Console.WriteLine(pair.Key);
+    }
+}
+
